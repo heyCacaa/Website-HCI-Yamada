@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header + Navigation */
+#header {
+    position: fixed;
+    background-color: rgb(233, 229, 214);
+    max-height: 192px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    box-shadow: 0 7px 20px rgb(0,0,0,0.5);
+}
+
+#header .brand {
+    text-align: center;
+}
+
+#header .nav ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#header .nav li {
+    display: inline-block;
+}
+
+#header .nav a {
+    text-decoration: none;
+    color: rgb(70, 78, 46);
+    display: block;
+    font-size: 18px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#header .nav a:hover {
+    background: rgb(70, 78, 46);
+    color: rgb(233, 229, 214);
+    opacity: 0.7;
+}
+
+/* Content */
+#content {
+    background: rgb(70, 78, 46);
+    width: 100%;
+    height: 100%;
+    padding-top: 192px;
+}
+
+.banner {
+    height: 80vh;
+    width: 100%;
+    padding: 0 200px;
+    background-image: url(img/banner2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.banner button {
+    background-color: rgb(70, 78, 46);
+    background-repeat: no-repeat;
+    border: none;
+    padding: 20px 100px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 200px 240px 0;
+    color: rgb(233, 229, 214);
+    cursor: pointer;
+}
+
+.home-prod h4 {
+    text-align: center;
+    color: rgb(233, 229, 214);
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+#content .tipe-prod ul {
+    display: flex;
+    margin: 80px 0 0 56px;
+}
+
+#content .tipe-prod ul li {
+    list-style: none;
+}
+
+#content .tipe-prod ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(233, 229, 214);
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+#content .tipe-prod ul li a:hover {
+    background: rgb(233, 229, 214);
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(70, 78, 46);
+}
+
+#content .searchbar {
+    width: 100%;
+    min-height: 20vh;
+    max-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 7%;
+}
+
+#content .search {
+    width: 100%;
+    max-width: 280px;
+    background: rgb(233, 229, 214);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0px 50px;
+}
+
+#content .search input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 0px 1px;
+    font-size: 20px;
+    color: rgb(70, 78, 46);
+}
+
+::placeholder {
+    color: rgb(70, 78, 46);
+}
+
+.search button img{
+    width: 25px;
+    margin-right: 20px;
+}
+
+.search button {
+    border: 0;
+    width: 60px;
+    height: 60px;
+    background: none;
+    cursor: pointer;
+}
+
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.product {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    padding-top: 10px;
+}
+
+.product img {
+    width: 100%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.product h1 {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+    margin-top: 2px;
+}
+
+.product h2 {
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    padding-top: 0 8px;
+    margin-top: 30px;
+}
+
+.product h3 {
+    font-size: 26px;
+    text-align: center;
+    color: rgb(70, 78, 46);
+    margin-top: 0;
+}
+
+.product button {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(233, 229, 214);
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 80%;
+    padding: 10px 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0 40px 0;
+    border-radius: 10px;
+}
+
+.product .detail {
+    background: rgb(70, 78, 46, 0.8);
+}
+
+.form-cont {
+    display: flex;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.booking {
+    max-width: 700px;
+    max-height: 730px;
+    height: 100%;
+    width: 100%;
+    background: white;
+    padding: 20px 100px;
+    border-radius: 10px;
+}
+
+.booking h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(54, 39, 6);
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(54, 39, 6);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.booking form .isi-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+}
+
+.booking form .isi-form .input-form {
+    width: calc(100% / 2 - 20px);
+    margin: 7px 0;
+}
+
+.booking form .isi-form .input-form .quest {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: block;
+    color: rgb(54, 39, 6);
+}
+
+.booking form .isi-form .input-form input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgb(172, 185, 146);
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.booking form .isi-form .input-form input::-webkit-outer-spin-button,
+.booking form .isi-form .input-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* .booking form .isi-form .input-form input::placeholder {
+    font-size: 13px;
+} */
+
+.booking form .isi-form .input-form select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgb(172, 185, 146);
+    padding: 0 12px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+}
+
+/* .booking form .isi-form .input-form select:invalid {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.booking form .isi-form .input-form select:valid {
+    font-size: 13px;
+} */
+
+
+.booking form .isi-form button {
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: rgb(233, 229, 214);
+    background: rgb(70, 78, 46);
+    cursor: pointer;
+}
+
+.booked-text {
+    color: rgb(233, 229, 214);
+    text-align: center;
+}
+
+.booked-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.booked-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.booked-text button {
+    outline: none;
+    border: none;
+    width: 28%;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 0 0 70px 0;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    background: rgb(233, 229, 214);
+    cursor: pointer;
+}
+
+.booked-text a {
+    text-decoration: none;
+    color: rgb(70, 78, 46);
+}
+
+/* Footer */
+#footer {
+    background-color: rgb(233, 229, 214);
+    padding: 50px 0 25px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h1 {
+    font-size: 18px;
+    color: rgb(70, 78, 46);
+    margin-bottom: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-col h1::before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    background-color: rgb(70, 78, 46);
+    left: 0;
+    bottom: -5px;
+    width: 45px;
+    height: 3px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.footer-col ul li a {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(70, 78, 46);
+    transition: 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    opacity: 0.6;
+}
+
+.footer-col .sosmed a {
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    color: rgb(70, 78, 46);
+    transition: 0.2s ease;
+}
+
+.footer-col .sosmed a:hover {
+    color: rgb(70, 78, 46, 0.7);
+}
+
+.cr {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 40px;
+    color: rgb(70, 78, 46);
+}
